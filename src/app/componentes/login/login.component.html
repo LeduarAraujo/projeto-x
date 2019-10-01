@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row justify-content-center ">
+    <div class="col-auto ">
+      <img src="../../../assets/img/logo.svg" width="130px" height="130px" alt="Logo" />
+    </div>
+  </div>
+  <div class="row justify-content-center ">
+    <div class="col-auto ">
+      <form #formLogin="ngForm" (submit)="logar(formLogin)" class="form-group">
+        <div class="row justify-content-end">
+          <label for="userId">Usuario:</label>
+          <input type="text" [(ngModel)]="userId" class="form-control" name="userId" id="userId" placeholder="nome.sobrenome" required="" aria-required="true">
+        </div>
+        <div class="row justify-content-end">
+          <label for="password">Senha:</label>
+          <input type="password" [(ngModel)]="password" class="form-control" name="password" id="password" placeholder="********" required="" aria-required="true">
+        </div>
+        <div class="row justify-content-end">
+          <button type="submit" class="btn btn-outline-info btn-sm">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
